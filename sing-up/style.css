@@ -152,9 +152,6 @@ a.sing__up__btn {
   font-weight: 300;
 }
 
-input[type="password"] {
-}
-
 .user__password__input input {
   width: 90%;
   border: none;
@@ -222,6 +219,7 @@ footer.login__foter {
   align-items: center;
   justify-content: space-around;
   color: #989898;
+  flex-wrap: wrap;
   margin: 2rem 0 0 0;
 }
 svg {
@@ -268,3 +266,13 @@ div.sing__up__btns > button:hover {
   border-bottom: 2px solid #fb5200;
 }
 /* div.sing__up__btns > button a::after */
+
+@media (max-width: 320px) {
+  .logo__text {
+    font-size: 24px;
+  }
+  footer.login__foter {
+    flex-wrap: wrap;
+    gap: 1.3rem;
+  }
+}
